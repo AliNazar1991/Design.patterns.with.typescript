@@ -1,0 +1,18 @@
+{
+  "name": "sort",
+  "version": "1.0.0",
+  "description": "in the sort folder, run tsc -w, w means watch and by this it will watch on any changes changes in the files in root dir which is src, and recompile the files to build folder.",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14"
+  }
+}
